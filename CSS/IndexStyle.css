@@ -1,0 +1,279 @@
+/*
+ * IndexStyle.css
+ * 
+ * Copyright 2018 Cristian <cristian@cristian-PC>
+ * 
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+ * MA 02110-1301, USA.
+ * 
+ * 
+ */
+
+
+body{
+	background-image:url("../imagenes/Fondos/Escudo.png");
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position:center;
+	background-size: 40%;
+
+}
+
+/*... cajas de rangos...*/
+
+.containerall{
+	position: relative;
+    display: flex;
+    padding: auto;
+    text-align:center;
+
+}
+.container {
+    position: relative;
+    width: 30%;
+    padding:5px;
+    /*display: inline-block;*/
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  text-decoration:none;
+}
+
+/*---- box -----*/
+
+/*------ cabecera ----*/
+
+#CabeceraIndex{
+	background-image: linear-gradient(to right, green, yellow);
+	width: 100%;
+	display: flex;
+}
+
+#CabeceraIndex img:nth-child(1){
+	height:150px;
+	/*width: 20%;	*/
+	margin: 5px;
+}
+
+#CabeceraIndex img:nth-child(3){
+	height:150px;
+	/*width: 20%;*/
+	margin: 5px;
+	padding-left: 5px;
+}
+
+#CabeceraIndex div{
+	width:50%;
+	text-align:center;
+	margin:auto;
+}
+
+/*-------- fin cabecera -------*/
+
+/*----- navegador -------------*/
+
+.NavegadorIndex{
+	list-style-type:none;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	background-image: linear-gradient(to right, green, yellow);
+}
+
+.NavegadorIndex li{
+	float:left;
+	display: block;
+}
+
+.NavegadorIndex a{
+	text-decoration:none;
+	color:black;
+	padding:5px;
+	display:block;
+}
+
+.Actual{
+	background-color: #df1733;
+	color: white;
+}
+
+.NavegadorIndex li a:hover{
+	background-color: #df1733;
+	color: white;
+}
+
+.mostrar{
+	position: absolute;
+	overflow: hidden;
+	display: none;
+	background-color: green;
+}
+
+.Accion:hover .mostrar{
+	display: block;
+}
+ /*--------- fin navegadores -------------*/
+
+/*--------- inicio aside -----------------*/
+
+#AsideIndex{
+	/*border: solid red;*/
+	border-radius:5px;
+	background-color: #2b5a9e;
+	width: 19%;
+	float:right;
+	margin-top:10px;
+	color: white;
+	
+}
+
+#user{
+	margin:auto;
+	width:90%;
+	display: block;
+}
+
+#pwd{
+	margin:auto;
+	width:90%;
+	display: block;
+}
+
+#boton{
+	margin:auto;
+	display:block;
+}
+
+#AsideIndex a{
+	color:white;
+	margin:auto;
+}
+
+#SectionAside{
+	/*border: solid yellow;*/
+	display: inline-block;
+	width:100%;
+	text-align:center;
+	margin-top:10px;
+}
+
+#SectionAside img{
+	border:solid red;
+	border-radius: 100px;
+	display: inline-block;
+	background-color:black;
+	width:100px;
+	height:100px;
+}
+
+#TextoAside{
+	display:inline-block;
+	/*border: solid red;*/
+	width: 90%;
+	display:inline-block;
+}
+
+/*-------- fin aside -----------------*/
+
+#container{
+	display: inline-block;
+	/*border: solid black;*/
+	width:100%;
+}
+
+#SectionIndex{
+	/*border: solid red;*/
+	display: inline-block;
+	width: 79%;
+}
+
+#arboles{
+	text-align:center;
+}
+
+/* ........ Sección de coordinadores ...........*/
+
+#SectionCoordinadores{
+	/*border: solid yellow;*/
+	display: inline-block;
+	width:330px;
+	text-align:center;
+	margin-top: 10px;
+}
+
+#SectionCoordinadores img{
+	border:solid red;
+	border-radius: 100px;
+	display: inline-block;
+	background-color:black;
+	width:200px;
+	height:200px;
+}
+
+#TextoCoordinador{
+	display:inline-block;
+	/*border: solid red;*/
+	width: 90%;
+	display:inline-block;
+}
+
+
+/*...............formulario de inscripción...........*/
+
+#formularioNuevoCamp label{
+	border: solid black;
+	width: 200px;
+	display: inline-block;
+
+}
+
+
+/*.............. fin sección de coordinadores........*/
+#FooterIndex{
+	border: solid green;
+	width: 100%;
+	height: 50px;
+}

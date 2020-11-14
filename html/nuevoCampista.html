@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+   nuevoCampista.html
+   
+   Copyright 2018 Cristian <cristian@cristian-PC>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+<script>
+function ver(image){
+document.getElementById('image').innerHTML = "<img src='"+image+"'>" 
+}
+</script>
+
+
+<head>
+<meta charset="utf-8" />
+<title>Registro campista</title>
+<meta name="generator" content="Geany 1.32" />
+<link rel="stylesheet" href="../CSS/IndexStyle.css">
+</head>
+
+<body>
+	<header id="CabeceraIndex"> 
+		<img src="../imagenes/logos/fusion.png"/>
+		<div>
+			<h1> Campamentos Jueveniles </h1>
+			<h2> Examen de ascenso Semilla</h2>
+		</div>
+		<img src="../imagenes/logos/Deporte.png"/> 
+	</header>
+	
+	<br> <span id="image"></span>  
+	<form id="formularioNuevoCamp">
+		<input type="file" name="foto"  accept=".png, .jpg, .bmp" onChange="ver(form.file.value)">
+		</br>
+		<label for="nombre"> Nombre</label>
+		<input type="text" name="nombre">
+		</br>
+		<label for="apellido"> Apellido</label>
+		<input type="text" name="apellido">
+		</br>
+		<label for="fechaNacido"> Fecha de nacimiento</label>
+		<input type="date" name="fechaNacido">
+		</br>
+		<label for="DIT"> Documento de identidad</label>
+		<input type="text" name="DIT">
+		</br>
+		<label for="selecMunicipio"> Municipio</label>
+		<select name="selecMunicipio">
+			<option value="1"> Aguadas</option>
+			<option value="2"> Anserma</option>
+			<option value="3"> Aranzazu</option>
+			<option value="4"> Belalcazar</option>
+			<option value="5"> Chinchina</option>
+			<option value="6"> Villamaria</option>
+		</select>
+		</br>
+		<label for="direccion"> Dirección</label>
+		<input type="text" name="direccion">
+		</br>
+		<label for="Telefono"> Celular</label>
+		<input type="text" name="Telefono">
+		</br>
+		<label for="Correo"> Correo</label>
+		<input type="text" name="Correo">
+		</br>
+		<label for="Acudiente">Nombre del acudiente: </label>
+		<input type="text" name="Acudiente">
+		</br>
+		<label for="TelefonoAcudiente"> Telefono del acudiente</label>
+		<input type="text" name="TelefonoAcudiente">
+		</br>
+		<label for="añosPrograma"> Tiempo en años en el programa: </label>
+		<input type="text" pattern="[0-9]{2}" name="añosPrograma">
+		</br>
+		<label for="Rango"> Nivel de formación</label>
+		<select>
+			<option value="1"> Campista</option>
+			<option value="2"> Semilla</option>
+			<option value="3"> Raíz</option>
+			<option value="4">Tallo</option>
+			<option value="5">Hoja</option>
+			<option value="6">Flor</option>
+			<option value="7">Fruto</option>
+		</select>
+		</br>
+		
+		<label for="centroEduca"> Centro educativo</label>
+		<input type="text" name="centroEduca">
+		</br>
+		<label for="carrera"> Grado o Carrera actual: </label>
+		<input type="text" name="carrera">
+		</br>
+		<label for="Enfermedades"> Enfermedades: </label>
+		<input type="text" name="Enfermedades">
+		</br>
+		<label for="Sangre"> Grupo Sanguineo</label>
+		<input type="text" name="Sangre">
+		</br>
+		<label for="EPS"> EPS</label>
+		<input type="text" name="EPS">
+		</br>
+		<label for="Talla"> Talla</label>
+		<input type="text" pattern="[0-9]{3}" name="Talla">
+		</br>
+		<label for="Peso"> Peso</label>
+		<input type="text" pattern="[0-9]{3}" name="Peso">
+		</br>
+		<label for="observaciones"> Observaciones</label>
+		<input type="text" name="observaciones">
+		</br>
+		<input type="submit"/>
+		
+	</form>
+
+</body>
+
+</html>

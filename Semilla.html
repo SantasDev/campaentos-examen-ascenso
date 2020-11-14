@@ -1,0 +1,197 @@
+<!--
+   Semilla.html
+   
+   Copyright 2018 Cristian <cristian@cristian-PC>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html lang="es">
+
+<head>
+	
+	<title>Examen asenso Semilla</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.32" />
+	<link rel="stylesheet" href="CSS/EstiloSemilla.css">
+	
+</head>
+
+<body>
+	
+	<header id="cabeceraSemilla">
+		<img src="imagenes/Pines/semilla.svg"/>
+		<div>
+			<h1> Campamentos Jueveniles </h1>
+			<h2> Examen de ascenso Semilla</h2>
+		</div>
+		<img src="imagenes/logos/Deporte.png"/>
+	
+	</header>
+	
+	
+		<aside> 
+		<details>
+		<summary>Rangos de asenso:</summary>	
+		<nav>
+			<ul>
+				<li><a href="index.html"> Home</a></li>
+				<li><a href="Raiz.html"> Raiz</a></li>
+				<li><a href="Tallo.html"> Tallo</a></li>
+				<li><a href="Hoja.html"> Hoja</a></li>
+				<li><a href="Flor.html"> Flor</a></li>
+				<li><a href="Fruto.html"> Fruto</a></li>
+			</ul>
+		</nav>	
+		</details>
+	</aside>
+	
+	<section> <!-- Sección de bienvenida -->
+		<h1> Examen de ascenso Semilla</h1>
+		
+		<?php
+			$campista=$_GET['usuario'];
+			print("Bienvenido joven campista");
+		?>
+		
+		<p>Campamentos juveniles en su trayecto de formación, les agradece 
+		pertenecer a este proceso, es por ellos que a continuación se
+		realizará una serie de preguntas.</p>
+	
+	<section id="formularioMistica"> <!-- Sección de mistica -->
+		<h1> Sección de mistica campamentil</h1>
+		<article>
+			<h2> Pregunta 1:</h2>
+			<p> El Programa CAMPAMENTOS JUVENILES tiene su inicio en
+			 lineamientos emitidos por COLDEPORTES dentro del marco de
+			 programas institucionales del sector recreativo. ¿Cuál 
+			 es el año de fundación del programa CAMPAMENTOS JUVENILES?</p>
+			 
+			 <form> 
+				<label for ="Respuesta"> año: </label>
+				<input type="text" name="Respuesta"/> 
+			 </form>
+			
+			<h2> Pregunta 2:</h2>
+			<p> ¿Cuales fueron las razones para la creación del programa
+			CAMPAMENTOS JUVENILES?</p>
+			
+			<input type="checkbox" name="RazCrea1" value="1"/>
+			<label for="RazCrea1"> La preocupación por la existencia de
+			 pocos programas de recreación para jóvenes desde el sector
+			 estatal.</label>
+			 <br>
+			<input type="checkbox" name="RazCrea2" value="2"/>
+			<label for="RazCrea2"> Por actividades que fueran
+del completo agrado para los jóvenes que
+estaban ansiosos por un programa que
+llenara sus expectativas de libertad y
+aventura.</label>
+			
+			
+		</article>
+	
+	
+	</section>
+	
+	
+	<section id="formularioRecreacion"> <!-- Sección de Recreación -->
+		<h1>Sección de Recreación</h1>
+		<article>
+			<h2>Pregunta 1:</h2>
+			
+		</article>
+		<article>
+			<h2>Pregunta 2:</h2>
+			Espacio para la pregunta 2
+			
+		</article>
+		<article>
+			<h2>Pregunta 3:</h2>
+			Espacio para la pregunta 3
+			
+		</article>
+		<article>
+			<h2>Pregunta 4:</h2>
+			Espacio para la pregunta 4
+			
+		</article>
+	</section>
+	
+	<section id="formularioTecnicas"> <!-- Sección de Tecnicas campamentiles -->
+	<h1>Sección de Tecnicas campamentiles</h1>
+	<article>
+		<h2> Pregunta 1:</h2>
+		Espacio para la pregunta 1
+	</article>
+	<article>
+		<h2> Pregunta 2:</h2>
+		Espacio para la pregunta 2
+	</article>
+	<article>
+		<h2> Pregunta 3:</h2>
+		Espacio para la pregunta 3
+	</article>
+	<article>
+		<h2> Pregunta 4:</h2>
+		Espacio para la pregunta 4
+	</article>
+	<article>
+		<h2> Pregunta 5:</h2>
+		Espacio para la pregunta 5
+	</article>
+	</section>
+	
+	<section id="formularioSalud"> <!-- Sección de salud-->
+		<h1> Sección de salud</h1>
+		<article>
+			<h2> Pregunta 1:</h2>
+			Espacio para la pregunta 1
+		</article>
+		<article>
+			<h2> Pregunta 2:</h2>
+			Espacio para la pregunta 2
+		</article>
+		<article>
+			<h2> Pregunta 3:</h2>
+			Espacio para la pregunta 3
+		</article>
+		<article>
+			<h2> Pregunta 4:</h2>
+			Espacio para la pregunta 4
+		</article>
+		<article>
+			<h2> Pregunta 5:</h2>
+			Espacio para la pregunta 5
+		</article>
+		
+	</section>
+	
+	
+	<footer>
+		<h2> Derechos de autor</h2>
+		&copy; 2018
+		<address>
+			Cristian L. Henao <a href="mailto: clhenaos@unal.edu.co"> 
+			clhenaos@unal.edu.co </a>
+		</address>
+	</footer>
+	
+</body>
+
+</html>
